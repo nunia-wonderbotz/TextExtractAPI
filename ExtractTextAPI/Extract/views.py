@@ -12,6 +12,12 @@ from PyPDF2 import PdfReader
 import requests
 from io import BytesIO
 
+
+# Index Page View
+# def index(request):
+#        return render(request, 'index.html')
+   
+# API Views
 @api_view(['GET', 'POST', 'DELETE'])
 @parser_classes([MultiPartParser, FormParser])
 def extract_list(request):

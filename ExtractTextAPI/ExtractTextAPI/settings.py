@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-nc5q&emor(elhnt2jc=9t02yz8xc=#f=3gk$yf(3pun6iw^xsy
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app']
 
 
 # Application definition
@@ -65,7 +65,7 @@ ROOT_URLCONF = 'ExtractTextAPI.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
